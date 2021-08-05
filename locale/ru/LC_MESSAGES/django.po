@@ -1,0 +1,441 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-31 12:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: templates/account/email_confirm.html:6
+msgid "Confirm E-mail Address"
+msgstr "Подтвердите адрес электронной почты"
+
+#: templates/account/email_confirm.html:10
+msgid "Подтведите свой адрес электронной почты"
+msgstr "Подтведите свой адрес электронной почты"
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Пожалуйста подтвердите, что это <a href=\"mailto:%(email)s\">%(email)s</a> "
+"адрес электронной почты пользователя: %(user_display)s."
+msgstr ""
+"Пожалуйста подтвердите, что это <a href=\"mailto:%(email)s\">%(email)s</a> "
+"адрес электронной почты пользователя: %(user_display)s."
+
+#: templates/account/email_confirm.html:20 templates/news_delete.html:49
+msgid "Подтвердить"
+msgstr "Подтвердить"
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"Это подтверждение уже просрочено или неверное. Пожалуйста <a href="
+"\"%(email_url)s\">отправьте новый запрос на подтверждение по электронной "
+"почте</a>."
+msgstr ""
+"Это подтверждение уже просрочено или неверное. Пожалуйста <a href="
+"\"%(email_url)s\">отправьте новый запрос на подтверждение по электронной "
+"почте</a>."
+
+#: templates/account/login.html:10 templates/account/login.html:14
+msgid "Вход/Регистрация"
+msgstr "Вход/Регистрация"
+
+#: templates/account/login.html:19
+#, python-format
+msgid ""
+"Пожалуйста войдите с помощью вашей учетной записи. Или\n"
+"  <a href=\"%(signup_url)s\">зарегистрируйтесь</a>.</br>\n"
+"Вы можете зарегистрироваться c помощью:"
+msgstr ""
+"Пожалуйста войдите с помощью вашей учетной записи. Или\n"
+"  <a href=\"%(signup_url)s\">зарегистрируйтесь</a>.</br>\n"
+"Вы можете зарегистрироваться c помощью:"
+
+#: templates/account/login.html:31
+msgid "или если у вас есть уже учетная запись, то войти"
+msgstr "или если у вас есть уже учетная запись, то войти"
+
+#: templates/account/login.html:38
+#, python-format
+msgid ""
+"Если у вас нет акаунта, пожалуйста\n"
+"<a href=\"%(signup_url)s\">зарегистрируйтесь</a> first."
+msgstr ""
+"Если у вас нет акаунта, пожалуйста\n"
+"<a href=\"%(signup_url)s\">зарегистрируйтесь</a> first."
+
+#: templates/account/login.html:49
+#: templates/comment/comments/create_comment.html:33
+#: templates/comment/comments/create_comment.html:40
+#: templates/flatpages/default.html:57 templates/socialaccount/signup.html:8
+#: users/forms.py:50
+msgid "Войти"
+msgstr "Войти"
+
+#: templates/account/login.html:50 users/forms.py:42
+msgid "Забыли пароль?"
+msgstr "Забыли пароль?"
+
+#: templates/account/logout.html:5 templates/account/logout.html:8
+msgid "Выход"
+msgstr "Выход"
+
+#: templates/account/logout.html:10
+msgid "Вы действительно хотите выйти из своей учетной записи?"
+msgstr "Вы действительно хотите выйти из своей учетной записи?"
+
+#: templates/account/logout.html:19 templates/account/signin.html:52
+msgid "Выйти"
+msgstr "Выйти"
+
+#: templates/account/password_reset.html:8
+#: templates/account/password_reset.html:13
+msgid "Сбросить пароль"
+msgstr "Сбросить пароль"
+
+#: templates/account/password_reset.html:18
+msgid ""
+"Забыли свой пароль? Введите ниже свой адрес электронной почты, и мы отправим "
+"вам электронное письмо, позволяющее изменить его."
+msgstr ""
+"Забыли свой пароль? Введите ниже свой адрес электронной почты, и мы отправим "
+"вам электронное письмо, позволяющее изменить его."
+
+#: templates/account/password_reset.html:23
+msgid "Сбросить мой пароль"
+msgstr "Сбросить мой пароль"
+
+#: templates/account/password_reset.html:26
+msgid "Свяжитесь с нами, если у вас возникнут проблемы со сбросом пароля."
+msgstr "Свяжитесь с нами, если у вас возникнут проблемы со сбросом пароля."
+
+#: templates/account/signin.html:9
+msgid "Пользователь"
+msgstr "Пользователь"
+
+#: templates/account/signin.html:13
+#, python-format
+msgid " Вы вошли как: %(user_display)s "
+msgstr " Вы вошли как: %(user_display)s "
+
+#: templates/account/signin.html:15
+#, fuzzy
+#| msgid ""
+#| "Добро пожаловать на наш сайт, %(user.first_name)s %(user.last_name)s!!"
+msgid "Добро пожаловать на наш сайт,"
+msgstr "Добро пожаловать на наш сайт, %(user.first_name)s %(user.last_name)s!!"
+
+#: templates/account/signin.html:17
+msgid "Вы можете изменить:"
+msgstr "Вы можете изменить:"
+
+#: templates/account/signin.html:40
+msgid "Изменить"
+msgstr "Изменить"
+
+#: templates/account/signup.html:7 templates/account/signup.html:10
+msgid "Регистрация"
+msgstr "Регистрация"
+
+#: templates/account/signup.html:12
+#, python-format
+msgid ""
+"Если у вас уже есть аккаунт? Тогда можете <a href=\"%(login_url)s\">войти</"
+"a>."
+msgstr ""
+"Если у вас уже есть аккаунт? Тогда можете <a href=\"%(login_url)s\">войти</"
+"a>."
+
+#: templates/account/signup.html:20 templates/socialaccount/signup.html:5
+msgid "Зарегистрироваться"
+msgstr "Зарегистрироваться"
+
+#: templates/account/verification_sent.html:5
+msgid "Verify Your E-mail Address"
+msgstr "Проверьте свой адрес электронной почты"
+
+#: templates/account/verification_sent.html:8
+msgid "Подтвердите ваш E-mail адрес"
+msgstr "Подтвердите ваш E-mail адрес"
+
+#: templates/account/verification_sent.html:10
+msgid ""
+"Мы отправили вам электронное письмо для проверки. Перейдите по "
+"предоставленной ссылке в письме, чтобы завершить процесс регистрации. "
+"Свяжитесь с нами, если вы не получите его в течение нескольких минут."
+msgstr ""
+"Мы отправили вам электронное письмо для проверки. Перейдите по "
+"предоставленной ссылке в письме, чтобы завершить процесс регистрации. "
+"Свяжитесь с нами, если вы не получите его в течение нескольких минут."
+
+#: templates/category.html:12
+msgid "Categorys"
+msgstr "Категории"
+
+#: templates/category.html:18 templates/flatpages/default.html:48
+msgid "Категории"
+msgstr "Категории"
+
+#: templates/category.html:24 templates/news.html:23
+msgid "Категория"
+msgstr "Категория"
+
+#: templates/category.html:27
+msgid "Подписка"
+msgstr "Подписка"
+
+#: templates/category.html:53
+msgid "категорий нет нет!"
+msgstr "категорий нет нет!"
+
+#: templates/comment/comments/base.html:8
+msgid "Комментарии"
+msgstr "Комментарии"
+
+#: templates/comment/comments/base.html:17
+msgid "комментарий на эту статью..."
+msgstr "комментарий на эту статью..."
+
+#: templates/comment/comments/base.html:21
+msgid "ответ на комментарий..."
+msgstr "ответ на комментарий..."
+
+#: templates/comment/comments/comment_content.html:10
+#, python-format
+msgid "посмотреть %(comment.user)s профиль"
+msgstr "посмотреть %(comment.user)s профиль"
+
+#: templates/comment/comments/comment_content.html:10
+msgid "комментировать как анонимный пользователь"
+msgstr "комментировать как анонимный пользователь"
+
+#: templates/comment/comments/comment_content.html:15
+msgid "Отредактирован"
+msgstr "Отредактирован"
+
+#: templates/comment/comments/comment_content.html:15
+#, fuzzy, python-format
+#| msgid "Отредактирован: %(edited_time)s назад"
+msgid "Отредактирован: %(edited_time)s ago"
+msgstr "Отредактирован: %(edited_time)s назад"
+
+#: templates/comment/comments/comment_content.html:17
+msgid "Размещен"
+msgstr "Размещен"
+
+#: templates/comment/comments/comment_content.html:17
+#, python-format
+msgid "%(posted_time)s ago"
+msgstr "%(posted_time)s назад"
+
+#: templates/comment/comments/comment_content.html:36
+msgid " Ответить"
+msgid_plural " Ответы"
+msgstr[0] "Ответить"
+msgstr[1] "Ответы"
+
+#: templates/comment/comments/comment_modal.html:6
+msgid "Подтверждение удаления"
+msgstr "Подтверждение удаления"
+
+#: templates/comment/comments/comment_modal.html:7
+msgid "Close"
+msgstr "Закрыть"
+
+#: templates/comment/comments/comment_modal.html:12
+msgid "Вы уверены что хотите удалить этот комментарий?"
+msgstr "Вы уверены что хотите удалить этот комментарий?"
+
+#: templates/comment/comments/comment_modal.html:15
+msgid "Закрыть"
+msgstr "Закрыть"
+
+#: templates/comment/comments/comment_modal.html:22
+#: templates/comment/comments/delete_icon.html:3 templates/news.html:76
+msgid "Удалить"
+msgstr "Удалить"
+
+#: templates/comment/comments/content.html:9
+msgid "читать еще"
+msgstr "читать еще"
+
+#: templates/comment/comments/create_comment.html:20
+msgid "Ответить"
+msgstr "Ответить"
+
+#: templates/comment/comments/create_comment.html:20
+msgid "Комментировать"
+msgstr "Комментировать"
+
+#: templates/comment/comments/create_comment.html:31
+msgid "Комментировать ананонимно или"
+msgstr "Комментировать ананонимно или"
+
+#: templates/comment/comments/create_comment.html:35
+msgid "сохранить ваш разговор нетронутым"
+msgstr "сохранить ваш разговор нетронутым"
+
+#: templates/comment/comments/create_comment.html:42
+msgid "и присоединиться к дискусии"
+msgstr "и присоединиться к дискусии"
+
+#: templates/comment/comments/edit_icon.html:3
+msgid "Отредактировать"
+msgstr "Отредактировать"
+
+#: templates/comment/reactions/reactions.html:5
+msgid "Нравится"
+msgstr "Нравится"
+
+#: templates/comment/reactions/reactions.html:16
+msgid "Не нравится"
+msgstr "Не нравится"
+
+#: templates/flatpages/default.html:21
+msgid "Newspaper — "
+msgstr "Газета - "
+
+#: templates/flatpages/default.html:40
+msgid "О нас"
+msgstr "О нас"
+
+#: templates/flatpages/default.html:45
+msgid "Новости"
+msgstr "Новости"
+
+#: templates/flatpages/default.html:51
+msgid "Поиск"
+msgstr "Поиск"
+
+#: templates/flatpages/default.html:74
+msgid "Ок"
+msgstr "Ок"
+
+#: templates/news.html:14
+#, python-format
+msgid "Новости (%(post_count)s)"
+msgstr "Новости (%(post_count)s)"
+
+#: templates/news.html:20 templates/search.html:41
+msgid "Заголовок"
+msgstr "Заголовок"
+
+#: templates/news.html:26 templates/search.html:44
+msgid "Дата публикации"
+msgstr "Дата публикации"
+
+#: templates/news.html:29 templates/search.html:47
+msgid "Краткое содержание"
+msgstr "Краткое содержание"
+
+#: templates/news.html:32
+msgid "Рейтинг"
+msgstr "Рейтинг"
+
+#: templates/news.html:70 templates/search.html:50
+msgid "Статья"
+msgstr "Статья"
+
+#: templates/news.html:73
+#, fuzzy
+#| msgid "Отредактировать"
+msgid "Редактировать"
+msgstr "Отредактировать"
+
+#: templates/news.html:83
+msgid "Новостей нет! "
+msgstr "Новостей нет! "
+
+#: templates/news.html:86
+msgid "Добавить новость "
+msgstr "Добавить новость "
+
+#: templates/news.html:92 templates/news.html:95
+msgid "Первая "
+msgstr "Первая "
+
+#: templates/news.html:111 templates/news.html:114
+msgid "Последняя "
+msgstr "Последняя "
+
+#: templates/news_create.html:11
+msgid "Информация о новости "
+msgstr "Информация о новости "
+
+#: templates/news_delete.html:11
+msgid "Вы действительно хотите удалить данный товар? "
+msgstr "Вы действительно хотите удалить данный товар? "
+
+#: templates/news_delete.html:16
+msgid "Заголовок "
+msgstr "Заголовок "
+
+#: templates/news_delete.html:19
+msgid "Дата публикации "
+msgstr "Дата публикации "
+
+#: templates/news_delete.html:22
+msgid "Краткое содержание "
+msgstr "Краткое содержание "
+
+#: templates/news_delete.html:41
+msgid "Статья "
+msgstr "Статья "
+
+#: templates/news_detail.html:24
+msgid "Категории:"
+msgstr "Категории:"
+
+#: templates/search.html:16
+#, python-format
+msgid "Новости (%(news|length)s)"
+msgstr "Новости (%(news|length)s)"
+
+#: templates/search.html:74
+msgid "Новостей нет!"
+msgstr "Новостей нет!"
+
+#: templates/socialaccount/signup.html:10
+#, python-format
+msgid ""
+"Вы использовали %(provider_name)s учетную запись для входа.\n"
+" В качестве последнего шага, пожалуйста, заполните следующую форму:"
+msgstr ""
+"Вы использовали %(provider_name)s учетную запись для входа.\n"
+" В качестве последнего шага, пожалуйста, заполните следующую форму:"
+
+#: templates/socialaccount/signup.html:19
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: templates/too_many_posts.html:3
+msgid " Too many posts "
+msgstr " Слишком много сообщений "
+
+#: templates/too_many_posts.html:6
+msgid "Вы сегодня уже опубликовали три новости/статьи!"
+msgstr "Вы сегодня уже опубликовали три новости/статьи!"
+
+#: templates/too_many_posts.html:7
+msgid ""
+"По правилам нашего портала Вы не можете в день опубликовать больше трех "
+"публикаций. Попробуйте завтра!"
+msgstr ""
+"По правилам нашего портала Вы не можете в день опубликовать больше трех "
+"публикаций. Попробуйте завтра!"

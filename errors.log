@@ -1,0 +1,488 @@
+2021-07-30 20:17:33,340 ERROR Internal Server Error: / /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 61: 'get_available_languages', expected 'endcache'. Did you forget to register or load this tag?"), <traceback object at 0x7f721c92f1c0>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_available_languages'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 78, in do_cache
+    nodelist = parser.parse(('endcache',))
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 61: 'get_available_languages', expected 'endcache'. Did you forget to register or load this tag?
+2021-07-30 20:17:33,927 ERROR "GET / HTTP/1.1" 500 177001 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:18:31,789 ERROR Internal Server Error: / /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name."), <traceback object at 0x7f7217696780>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2021-07-30 20:18:32,501 ERROR "GET / HTTP/1.1" 500 150523 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:18:36,082 ERROR Internal Server Error: /home/ /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name."), <traceback object at 0x7f7217640240>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/middleware.py", line 12, in process_response
+    return flatpage(request, request.path_info)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/views.py", line 45, in flatpage
+    return render_flatpage(request, f)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/views.py", line 69, in render_flatpage
+    return HttpResponse(template.render({'flatpage': f}, request))
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2021-07-30 20:18:36,787 ERROR "GET /home/ HTTP/1.1" 500 157840 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:22:41,964 ERROR Internal Server Error: / /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name."), <traceback object at 0x7f479c205a80>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2021-07-30 20:22:42,665 ERROR "GET / HTTP/1.1" 500 150386 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:38:12,264 ERROR Internal Server Error: /accounts/login/ /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'crispy_forms.exceptions.CrispyError'>, CrispyError('|as_crispy_field got passed an invalid or inexistent field'), <traceback object at 0x7ff19b50f300>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/crispy_forms/templatetags/crispy_forms_filters.py", line 102, in as_crispy_field
+    raise CrispyError("|as_crispy_field got passed an invalid or inexistent field")
+crispy_forms.exceptions.CrispyError: |as_crispy_field got passed an invalid or inexistent field
+2021-07-30 20:38:13,068 ERROR "GET /accounts/login/?next=/users/ HTTP/1.1" 500 175367 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:46:46,284 ERROR Internal Server Error: /accounts/password/reset/ /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'django.template.base.VariableDoesNotExist'>, VariableDoesNotExist('Failed lookup for key [%s] in %r', ('formset', [{'True': True, 'False': False, 'None': None}, {}, {}, {'form': <ResetPasswordForm bound=False, valid=Unknown, fields=(email)>, 'view': <allauth.account.views.PasswordResetView object at 0x7ff19b57a880>, 'password_reset_form': <ResetPasswordForm bound=False, valid=Unknown, fields=(email)>, 'login_url': '/accounts/login/'}])), <traceback object at 0x7ff19b44f600>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'formset'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'formset'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'formset'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/crispy_forms/templatetags/crispy_forms_tags.py", line 204, in render
+    c = self.get_render(context).flatten()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/crispy_forms/templatetags/crispy_forms_tags.py", line 92, in get_render
+    actual_form = form.resolve(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [formset] in [{'True': True, 'False': False, 'None': None}, {}, {}, {'form': <ResetPasswordForm bound=False, valid=Unknown, fields=(email)>, 'view': <allauth.account.views.PasswordResetView object at 0x7ff19b57a880>, 'password_reset_form': <ResetPasswordForm bound=False, valid=Unknown, fields=(email)>, 'login_url': '/accounts/login/'}]
+2021-07-30 20:46:47,124 ERROR "GET /accounts/password/reset/ HTTP/1.1" 500 183068 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:50:38,333 ERROR Internal Server Error: /accounts/password/reset/ /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError('Could not parse some characters: form|-select-language||crispy'), <traceback object at 0x7ff19a13d1c0>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 78, in do_cache
+    nodelist = parser.parse(('endcache',))
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 633, in __init__
+    raise TemplateSyntaxError("Could not parse some characters: "
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: form|-select-language||crispy
+2021-07-30 20:50:39,064 ERROR "GET /accounts/password/reset/ HTTP/1.1" 500 185261 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:54:23,640 ERROR Internal Server Error: /home/ /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError('Could not parse some characters: |% form-select-language||crispy %'), <traceback object at 0x7ff19a15cec0>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/middleware.py", line 12, in process_response
+    return flatpage(request, request.path_info)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/views.py", line 45, in flatpage
+    return render_flatpage(request, f)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/views.py", line 69, in render_flatpage
+    return HttpResponse(template.render({'flatpage': f}, request))
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 78, in do_cache
+    nodelist = parser.parse(('endcache',))
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 633, in __init__
+    raise TemplateSyntaxError("Could not parse some characters: "
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: |% form-select-language||crispy %
+2021-07-30 20:54:24,343 ERROR "GET /home/ HTTP/1.1" 500 189785 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 20:55:53,081 ERROR Internal Server Error: /home/ /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'crispy_forms.exceptions.CrispyError'>, CrispyError('|as_crispy_field got passed an invalid or inexistent field'), <traceback object at 0x7ff19b44f200>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/middleware.py", line 12, in process_response
+    return flatpage(request, request.path_info)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/views.py", line 45, in flatpage
+    return render_flatpage(request, f)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/contrib/flatpages/views.py", line 69, in render_flatpage
+    return HttpResponse(template.render({'flatpage': f}, request))
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/crispy_forms/templatetags/crispy_forms_filters.py", line 102, in as_crispy_field
+    raise CrispyError("|as_crispy_field got passed an invalid or inexistent field")
+crispy_forms.exceptions.CrispyError: |as_crispy_field got passed an invalid or inexistent field
+2021-07-30 20:55:53,682 ERROR "GET /home/ HTTP/1.1" 500 156877 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None
+2021-07-30 21:00:48,476 ERROR Internal Server Error: / /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/utils/log.py (<class 'crispy_forms.exceptions.CrispyError'>, CrispyError('|as_crispy_field got passed an invalid or inexistent field'), <traceback object at 0x7ff19a163dc0>)
+Traceback (most recent call last):
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/template/base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/crispy_forms/templatetags/crispy_forms_filters.py", line 102, in as_crispy_field
+    raise CrispyError("|as_crispy_field got passed an invalid or inexistent field")
+crispy_forms.exceptions.CrispyError: |as_crispy_field got passed an invalid or inexistent field
+2021-07-30 21:00:49,146 ERROR "GET / HTTP/1.1" 500 149574 /home/ishadow/python-projects/Django-projects/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py None

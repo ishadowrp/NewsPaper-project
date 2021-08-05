@@ -1,0 +1,8 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}{% blocktrans %} Too many posts {% endblocktrans %}{% endblock title %}
+ 
+{% block content %}
+<h2>{% blocktrans %}Вы сегодня уже опубликовали три новости/статьи!{% endblocktrans %}</h2>
+<p>{% blocktrans %}По правилам нашего портала Вы не можете в день опубликовать больше трех публикаций. Попробуйте завтра!{% endblocktrans %}</p>
+{% endblock content %}

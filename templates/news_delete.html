@@ -1,0 +1,51 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %} News list {% endblock title %}
+ 
+{% block content %}
+
+{% load i18n %}
+
+<h2> {% blocktrans %}Вы действительно хотите удалить данный товар? {% endblocktrans %}</h2>
+  <table class="table">
+      <thead>
+      <tr>
+          <th>
+               {% blocktrans %}Заголовок {% endblocktrans %}
+          </th>
+          <th>
+               {% blocktrans %}Дата публикации {% endblocktrans %}
+          </th>
+          <th>
+               {% blocktrans %}Краткое содержание {% endblocktrans %}
+          </th>
+          <th>
+
+          </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td>
+              {{ post.title|censor }} <!-- не забываем что переменные в шаблоне ничем не отличаются от переменных в python. Здесь также можно получать доступ к полям класса. Например здесь мы выводим имя, в следующем столбце описание, и т.д.  -->
+          </td>
+          <td>
+              {{ post.date_posted|date:'d M Y' }}
+          </td>
+          <td>
+              {{ post.text|censor|truncatechars:50 }} <!-- дописываем специальный фильтр, чтобы ограничить количество символов до 20. Все остальные символы превратятся в многоточие. -->
+          </td>
+          <td>
+              <a href="{% url 'news_detail' post.id %}"> {% blocktrans %}Статья {% endblocktrans %}</a>
+          </td>
+      </tr>
+    </tbody>
+</table>
+ 
+<form method="POST">
+    {% csrf_token %}
+    <button class="btn btn-primary" type="submit">{% blocktrans %}Подтвердить{% endblocktrans %}></button>
+</form>
+{% endblock content %} 
