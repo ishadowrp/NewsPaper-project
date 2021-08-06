@@ -134,6 +134,8 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
 
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+
+    'basic.middlewares.TimezoneMiddleware',  #Подключаем свое Мидлваре по часовым поясам
 ]
 
 ROOT_URLCONF = 'newspaper.urls'
@@ -202,7 +204,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 

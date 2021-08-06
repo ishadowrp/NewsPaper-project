@@ -3,7 +3,7 @@ from django.shortcuts import redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView  # импортируем класс, который говорит нам о том, что в этом представлении мы будем выводить список объектов из БД
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
-from django.utils.translation import activate, get_supported_language_variant, LANGUAGE_SESSION_KEY
+# from django.utils.translation import activate, get_supported_language_variant, LANGUAGE_SESSION_KEY
 
 from .models import Post, Category
 from .filters import NewsFilter
