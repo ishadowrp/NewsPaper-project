@@ -40,7 +40,7 @@ def my_job():
                 subject=f'Здравствуй, {u.first_name} {u.last_name}. Мы подготовили дайджест статей за неделю с нашего портала!',
                 body='',
                 # это то же, что и message
-                from_email='ilya.dinaburgskiy@yandex.ru',
+                from_email='',
                 to=[f'{u.email}'],  # это то же, что и recipients_list
             )
             msg.attach_alternative(html_content, "text/html")  # добавляем html
